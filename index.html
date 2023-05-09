@@ -109,6 +109,47 @@
         color: grey;
         display: none;
       }
+      .wrapper img {
+        display: block;
+        max-width: 100%;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 20px;
+        overflow: hidden;
+        height: 100vh;
+      }
+      .gallery {
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      }
+      .galler-img {
+        scroll-snap-align: start;
+        margin-bottom: 10px;
+        min-height: 100vh;
+        object-fit: cover;
+      }
+      .lil-nav {
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      .lil-nav a {
+        height: 200px;
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .lil-nav img {
+        object-fit: cover;
+        filter: saturate(0);
+        transition: 0.3s ease all;
+      }
+
+      .lil-nav img:hover {
+        transform: scale(1.05);
+        filter: saturate(1);
+      }
     </style>
     <title>Velaris</title>
   </head>
@@ -125,7 +166,7 @@
         </nav>
         <h1>Velaris City of starlight</h1>
       </div>
-      <div class="row">
+      <div class="row header-img">
         <div class="col-4 mb-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/184/original/ross-stone-AlSBg6fvBAU-unsplash.jpg?1683095556"
@@ -364,23 +405,55 @@
           theaters in the city. In Velaris there are also other smaller theaters
           and an amphitheater on the sea cliffs.
         </p>
-        <div class="row">
-          <div class="col-6">
+        <div class="wrapper">
+          <nav class="lil-nav">
+            <a href="#image-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/348/original/amauri-mejia-IhXrWDckZOQ-unsplash.jpg?1683182578"
+                alt="hands covered in paint"
+              />
+            </a>
+            <a href="#image-2">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/349/original/kevin-schmid-RV6-09J3HYU-unsplash.jpg?1683182593"
+                alt="empty theatre seats"
+              />
+            </a>
+            <a href="#image-3">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/350/original/tetiana-shyshkina-trv87p_LMUw-unsplash.jpg?1683182617"
+                alt="artists tools"
+              />
+            </a>
+            <a href="#image-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/352/original/matthieu-comoy-koo_vYrlU_U-unsplash.jpg?1683183171"
+                alt="artists studio"
+              />
+            </a>
+          </nav>
+          <div class="gallery">
             <img
+              class="gallery_img"
+              id="image-1"
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/348/original/amauri-mejia-IhXrWDckZOQ-unsplash.jpg?1683182578"
               alt="hands covered in paint"
             />
             <img
+              class="gallery_img"
+              id="image-2"
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/349/original/kevin-schmid-RV6-09J3HYU-unsplash.jpg?1683182593"
               alt="empty theatre seats"
             />
-          </div>
-          <div class="col-6">
             <img
+              class="gallery_img"
+              id="image-3"
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/350/original/tetiana-shyshkina-trv87p_LMUw-unsplash.jpg?1683182617"
               alt="artists tools"
             />
             <img
+              class="gallery_img"
+              id="image-4"
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/352/original/matthieu-comoy-koo_vYrlU_U-unsplash.jpg?1683183171"
               alt="artists studio"
             />
