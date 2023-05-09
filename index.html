@@ -18,6 +18,7 @@
     <style>
       body {
         text-align: center;
+        background: grey;
       }
       img {
         max-width: 400px;
@@ -67,10 +68,10 @@
         text-decoration: none;
         color: white;
       }
-      .hewn-city {
-        background: black;
-        color: grey;
-        display: none;
+      .video {
+        width: 100%;
+        aspect-ratio: 30 / 10;
+        border-radius: 16px;
       }
       .card-img-top {
         margin: 0 auto;
@@ -81,6 +82,14 @@
         padding: 60px 0;
         color: white;
       }
+      .card {
+        background: grey;
+      }
+      p {
+        font-size: 18px;
+        color: black;
+        line-height: 1.5;
+      }
       footer {
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
@@ -89,6 +98,16 @@
         background-repeat: no-repeat;
         padding: 60px 0;
         color: white;
+      }
+      footer a {
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+      .hewn-city {
+        background: black;
+        color: grey;
+        display: none;
       }
     </style>
     <title>Velaris</title>
@@ -145,7 +164,7 @@
           />
         </div>
       </div>
-
+      <hr />
       <h3>From Sarah J Mass' series "A COURT OF THORNS AND ROSES"</h3>
       <p>
         Velaris, also known as the Court of Dreams and the City of Starlight, is
@@ -205,8 +224,7 @@
           </p>
         </div>
         <iframe
-          width="560"
-          height="315"
+          class="video"
           src="https://www.youtube.com/embed/KqoIbNJGvKQ"
           title="YouTube video player"
           frameborder="0"
@@ -223,7 +241,9 @@
           dreamer born into a court of nightmares...And the huntress with an
           artist's soul.” ― Sarah J. Maas, A Court of Mist and Fury
         </p>
-        <div class="row">
+        <hr />
+        <hr />
+        <div class="row mt-4">
           <div class="col-2 card">
             <header class="card-img-top">Rhysand</header>
             <div class="card-body">
@@ -319,7 +339,7 @@
           </div>
         </div>
       </div>
-      <div class="rainbow-header mt-4">
+      <div class="rainbow-header mt-4 mb-4">
         <h3>Rainbow of Velaris</h3>
       </div>
       <div>
@@ -366,11 +386,33 @@
             />
           </div>
         </div>
-        <button class="btn btn-dark">
+        <button class="btn btn-dark mb-4">
           Click here to see a darker side of the night court
         </button>
       </div>
     </div>
+    <footer class="mb-4">
+      <h2>My Dream Travel Destination</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="#"> Sarah J Mass Website</a>
+          <a href="#"> Learn More about Velaris</a>
+
+          <a href="#"> open sourced code on Github</a>
+        </div>
+        <div class="col-4">
+          <a href="#"> The House of Wind</a>
+          <a href="#"> The Sidra River</a>
+          <a href="#"> The Town House</a>
+        </div>
+        <div class="col-4">
+          <a href="#"> The River House</a>
+          <a href="#"> FInd More Books by Sarah J Mass</a>
+          <a href="#"> This project was coded by Megan Jackson</a>
+        </div>
+      </div>
+    </footer>
+
     <div class="container hewn-city">
       <div>
         <h2>The Hewn city</h2>
@@ -435,8 +477,5 @@
         </div>
       </div>
     </div>
-    <footer class="mt-4">
-      <h2>My Dream Travel Destination</h2>
-    </footer>
   </body>
 </html>
