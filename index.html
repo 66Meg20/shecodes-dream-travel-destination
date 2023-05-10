@@ -16,20 +16,17 @@
     />
 
     <style>
-      body {
-        text-align: center;
-        background: grey;
-      }
-      img {
+      .transform-img {
         max-width: 400px;
         display: block;
         margin: 0 auto;
         transition: ease-in-out 15ms;
       }
-      img:hover {
+      .transform-img:hover {
         transform: scale(1.2);
       }
       .header {
+        text-align: center;
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
         background-size: cover;
@@ -39,7 +36,26 @@
         padding-top: 10px;
         color: white;
       }
+      .hero {
+        max-width: 1300px;
+        margin: 0 auto;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/188/original/pexels-eberhard-grossgasteiger-10620136.jpg?1683095611");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: left;
+        padding: 60px 60px;
+        color: white;
+      }
+      .hero p {
+        color: white;
+      }
       .rainbow-header {
+        text-align: center;
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
         background-size: cover;
@@ -49,6 +65,17 @@
         color: white;
       }
       .the-court-of-dreams h2 {
+        text-align: center;
+        margin: 0 auto;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 0;
+        color: white;
+      }
+      .holiday-header {
+        text-align: center;
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
         background-size: cover;
@@ -78,6 +105,7 @@
         border-radius: 16px;
       }
       .card-img-top {
+        text-align: center;
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
         background-size: cover;
@@ -86,15 +114,15 @@
         padding: 60px 0;
         color: white;
       }
-      .card {
-        background: grey;
-      }
+
       p {
+        text-align: left;
         font-size: 18px;
         color: black;
         line-height: 1.5;
       }
       footer {
+        text-align: center;
         margin: 0 auto;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
         background-size: cover;
@@ -113,6 +141,7 @@
         color: grey;
       }
       .hewn-city p {
+        text-align: left;
         color: grey;
       }
       .active {
@@ -184,104 +213,89 @@
         <h1>Velaris City of starlight</h1>
       </div>
       <div class="row header-img">
-        <div class="col-4 mb-4">
+        <div class="hero">
+          <h3>From Sarah J Mass' series "A COURT OF THORNS AND ROSES"</h3>
+          <p>
+            Velaris, also known as the Court of Dreams and the City of
+            Starlight, is a hidden city on the western side of the Night Court
+            of Prythian. Its inhabitants agree that Rhysand be their High Lord
+            despite the fact that he is not fully High Fae being half Illyrian,
+            whom their counterparts the inhabitants of the Court of Nightmares
+            consider Lesser Faeries, it is for this reason that the inhabitants
+            of said Court do not approve of him. The city remained hidden from
+            Amarantha, thanks to Rhysand's fifty year sacrifice Under the
+            Mountain. The walls of Velaris had not been breached in over five
+            thousand years.
+          </p>
+          <div>
+            <div class="description">
+              <p>
+                Velaris had been built like a crust atop the rolling, steep
+                hills are flanked by a broad, winding river, sparkling like
+                deepest sapphire - the Sidra River - and snaking toward the vast
+                expanse of water beyond, the sea. The Sidra River is loitered by
+                ships with sails of varying shapes, making it navigable. The
+                city's buildings are crafted out of white marble, warm
+                sandstone, and the same red stone of the flat-topped mountains
+                that can be found on the northern edge of the city. Many
+                quarters of Velaris are full of townhouses with green copper
+                roofs and white chimneys. In Velaris many shops can be found
+                with delicate tables and chairs scattered outside their cheery
+                fronts. Many of these buildings are heated by warming spells.
+                Velaris has four market squares called Palaces, two on the
+                southern side of the Sidra River and two on the northern side.
+                What Velaris is most known for is the artists' quarter, called
+                the Rainbow of Velaris, where dwell the performing artists, the
+                musicians, the dancers, the actors. It is a brightly painted
+                pocket of the city, built atop one of the hills that flowed
+                right to the river's edge. In the Rainbow of Velaris can be
+                found a hundred galleries, supply stores, potters' compounds,
+                sculpture gardens, and anything in between. In this quarter is
+                located a building with a golden top, the most famous of the
+                five main theaters in the city. In Velaris there are also other
+                smaller theaters and an amphitheater on the sea cliff.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/184/original/ross-stone-AlSBg6fvBAU-unsplash.jpg?1683095556"
             alt="night sky over trees"
-            class="mb-3"
+            class="transform-img mb-3"
           />
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/185/original/evgeny-ozerov-uEmXlM1_eAk-unsplash.jpg?1683095568"
             alt="night sky over mountains"
-            class="mb-3"
+            class="transform-img mb-3"
           />
-        </div>
-        <div class="col-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/186/original/spencer-arquimedes-UQX7rSvDZ04-unsplash.jpg?1683095582"
             alt="full moon shining"
-            class="mb-3"
+            class="transform-img mb-3"
           />
 
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/187/original/kyle-johnson-8Gl7Ew-q6D8-unsplash.jpg?1683095596"
             alt="night sky over ocean"
-            class="mb-3"
+            class="transform-img mb-3"
           />
         </div>
         <div class="col-4">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/188/original/pexels-eberhard-grossgasteiger-10620136.jpg?1683095611"
             alt="night sky over mountains and trees"
-            class="mb-3"
+            class="transform-img mb-3"
           />
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/190/original/pexels-stein-egil-liland-3573603.jpg?1683095642"
             alt="night sky with lights"
-            class="mb-3"
+            class="transform-img mb-3"
           />
         </div>
       </div>
       <hr />
-      <h3>From Sarah J Mass' series "A COURT OF THORNS AND ROSES"</h3>
-      <p>
-        Velaris, also known as the Court of Dreams and the City of Starlight, is
-        a hidden city on the western side of the Night Court of Prythian. Its
-        inhabitants agree that Rhysand be their High Lord despite the fact that
-        he is not fully High Fae being half Illyrian, whom their counterparts
-        the inhabitants of the Court of Nightmares consider Lesser Faeries, it
-        is for this reason that the inhabitants of said Court do not approve of
-        him. The city remained hidden from Amarantha, thanks to Rhysand's fifty
-        year sacrifice Under the Mountain. The walls of Velaris had not been
-        breached in over five thousand years.
-      </p>
-      <div>
-        <div class="description">
-          <p>
-            Velaris had been built like a crust atop the rolling, steep hills
-            are flanked by a broad, winding river, sparkling like deepest
-            sapphire - the Sidra River - and snaking toward the vast expanse of
-            water beyond, the sea. The Sidra River is loitered by ships with
-            sails of varying shapes, making it navigable. At the northern edge
-            of Velaris, curved to where the river bent toward them and flowed
-            into their shadows, tower, like eternal guardians of the city, a
-            wall of flat-topped mountains of red stone. Their middle and larger
-            peak has holes and windows built in the uppermost part of it, in
-            fact, there is where resides the House of Wind, Rhysand's house for
-            official business. To the north different kinds of mountains
-            surrounded the city across the river, a range of sharp peaks like
-            fish's teeth cleaved the city's hills from the sea beyond. The
-            city's buildings are crafted out of white marble, warm sandstone,
-            and the same red stone of the flat-topped mountains that can be
-            found on the northern edge of the city. Many quarters of Velaris are
-            full of townhouses with green copper roofs and white chimneys. In
-            Velaris many shops can be found with delicate tables and chairs
-            scattered outside their cheery fronts, restaurants like the
-            Restaurant where the Inner Circle go dining, and nightclubs like the
-            Rita's. Many of these buildings are heated by warming spells.
-            Velaris has four market squares called Palaces, two on the southern
-            side of the Sidra River and two on the northern side. We know the
-            name of only three of the four squares: the Palace of Thread and
-            Jewels and the Palace of Bone and Salt that sell respectively jewels
-            and food and are positioned on the southern side of the Sidra River,
-            and, the Palace of Hoof and Leaf positioned on the northern side of
-            the Sidra River and twin square to the Palace of Bone and Salt. They
-            are white-stoned squares flanked by Tehran pillars supporting the
-            carved and painted buildings that watch over them and provide a
-            covered walkway beneath the shops built into the street level. What
-            Velaris is most known for is the artists' quarter, called the
-            Rainbow of Velaris, where dwell the performing artists, the
-            musicians, the dancers, the actors. It is a brightly painted pocket
-            of the city, built atop one of the hills that flowed right to the
-            river's edge. In the Rainbow of Velaris can be found a hundred
-            galleries, supply stores, potters' compounds, sculpture gardens, and
-            anything in between. In this quarter is located a building with a
-            golden top, the most famous of the five main theaters in the city.
-            In Velaris there are also other smaller theaters and an amphitheater
-            on the sea cliff.
-          </p>
-        </div>
-      </div>
+
       <div id="Residents" class="the-court-of-dreams mt-4">
         <h2>The Court Of Dreams</h2>
         <p class="mt-4 mb-3">
@@ -294,18 +308,14 @@
         <hr />
         <hr />
         <div class="row mt-4">
-          <div class="col-2 card">
+          <div class="col-4 card">
             <header class="card-img-top">Rhysand</header>
             <div class="card-body">
               <p class="card-text">
                 Rhysand is the most powerful High Lord in history and the
-                current ruler of the Night Court. He is handsome and appears to
-                be arrogant, careless, and cold at first. Rhysand was born to
-                the then High Lord of the Night Court and his mate, an Illyrian
-                Seamstress. He is Half-High Fae, He had a younger sister. "I
-                love my people, and my family. Do not think I wouldn’t become a
-                monster to keep them protected. –Rhysand, A Court of Mist and
-                Fury"
+                current ruler of the Night Court. "I love my people, and my
+                family. Do not think I wouldn’t become a monster to keep them
+                protected. –Rhysand, A Court of Mist and Fury"
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Rhysand"
@@ -316,18 +326,14 @@
               >
             </div>
           </div>
-          <div class="col-2 card">
+          <div class="col-4 card">
             <header class="card-img-top">Feyre</header>
             <div class="card-body">
               <p class="card-text">
-                Feyre is the High Lady of the Night Court and the first-ever
-                High Lady of Prythian. Feyre's family was wealthy. Her father
-                was called the "prince of merchants" and her mother was
-                negligent toward her daughters, caring only about her status and
-                party planning. "I was not a pet, not a doll, not an animal. I
-                was a survivor, and I was strong. I would not be weak, or
-                helpless again I would not, could not be broken. Tamed. –Feyre,
-                A Court of Mist and Fury"
+                Feyre is the High Lady of the Night Court. "I was not a pet, not
+                a doll, not an animal. I was a survivor, and I was strong. I
+                would not be weak, or helpless again I would not, could not be
+                broken. Tamed. –Feyre, A Court of Mist and Fury"
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Feyre_Archeron"
@@ -337,17 +343,14 @@
               >
             </div>
           </div>
-          <div class="col-2 card">
+          <div class="col-4 card">
             <header class="card-img-top">Cassian</header>
             <div class="card-body">
               <p class="card-text">
                 Cassian is an Illyrian member of the Night Court and part of
-                Rhysand's Inner Circle. He is a childhood friend of Rhysand and
-                Azriel. He rose to become the General Commander of the Night
-                Court's armies. He is considered to be one of the most powerful
-                Illyrians in Prythian history, along with Rhysand and Azriel. "I
-                can think of no better way to end my existence than to defend
-                those who need it most. –Cassian A Court of Mist And Fury"
+                Rhysand's Inner Circle."I can think of no better way to end my
+                existence than to defend those who need it most. –Cassian A
+                Court of Mist And Fury"
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Cassian"
@@ -357,18 +360,17 @@
               >
             </div>
           </div>
-          <div class="col-2 card">
+        </div>
+        <div class="row">
+          <div class="col-4 card">
             <header class="card-img-top">Azriel</header>
             <div class="card-body">
               <p class="card-text">
-                Azriel is an Illyrian and member of the Night Court. He is the
-                spymaster shadowsinger of Rhysand and belongs to his Inner
-                Circle. He is considered to be one of the most powerful
-                Illyrians. " Rhys, Cass, and I will occasionally remind each
-                other that what we think to be our greatest weakness can
-                sometimes be our biggest strength. And that the most unlikely
-                person can alter the course of history. –Azriel in A Court of
-                Wings and Ruin"
+                Azriel is an Illyrian. " Rhys, Cass, and I will occasionally
+                remind each other that what we think to be our greatest weakness
+                can sometimes be our biggest strength. And that the most
+                unlikely person can alter the course of history. –Azriel in A
+                Court of Wings and Ruin"
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Azriel"
@@ -378,17 +380,14 @@
               >
             </div>
           </div>
-          <div class="col-2 card">
+          <div class="col-4 card">
             <header class="card-img-top">Mor</header>
             <div class="card-body">
               <p class="card-text">
                 Morrigan, shortened to Mor by her friends, is a member of
                 Rhysand's Inner Circle and the Third-in-Command of the Night
-                Court. She is the court overseer and looks after the dynamics
-                between the Court of Nightmares and the Court of Dreams, running
-                both Velaris and the Hewn City. Mor's family used to rule the
-                Night Court. " I was a dreamer born into the Court of
-                Nightmares. So I got out. –Morrigan, A Court of Mist and Fury "
+                Court. " I was a dreamer born into the Court of Nightmares. So I
+                got out. –Morrigan, A Court of Mist and Fury "
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Morrigan"
@@ -398,17 +397,13 @@
               >
             </div>
           </div>
-          <div class="col-2 card">
+          <div class="col-4 card">
             <header class="card-img-top">Amren</header>
             <div class="card-body">
               <p class="card-text">
                 Amren is a High Fae who lives in Velaris. She is the
                 Second-in-command to the High Lord and Lady of the Night Court
-                and is part of Rhysand's Inner Circle. Amren is an extremely
-                powerful creature of unknown origins and a former inmate of the
-                Prison. She is said to have escaped after a millennia long
-                imprisonment by giving up “her grace and perfect immortality" to
-                bind herself and her soul into a High Fae body thus being Made.
+                and is part of Rhysand's Inner Circle.
               </p>
               <a
                 href="https://acourtofthornsandroses.fandom.com/wiki/Amren"
@@ -500,7 +495,13 @@
           </div>
         </div>
       </div>
+      <div class="holiday">
+        <header class="holiday-header mt-4">
+          <h2>Holidays and Events</h2>
+        </header>
+      </div>
     </div>
+
     <footer class="mb-4 mt-4">
       <h2>My Dream Travel Destination</h2>
       <div class="row">
@@ -579,6 +580,7 @@
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/659/original/camila-quintero-franco-mC852jACK1g-unsplash.jpg?1683346987"
           alt="woman screaming"
+          class="transform-img"
         />
         <p>
           Unlike Under the Mountain, which was a series of halls and rooms and
@@ -615,18 +617,21 @@
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/656/original/pelly-benassi-Hz1WQbHcXag-unsplash.jpg?1683346480"
               alt="birds flying in dark background"
+              class="transform-img"
             />
           </div>
           <div class="col-4">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/657/original/alexandre-lallemand-gZpM8PjMdBo-unsplash.jpg?1683346492"
               alt="sillohuette standing at end of alley"
+              class="transform-img"
             />
           </div>
           <div class="col-4">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/658/original/olesya-yemets-LyW7pqsP81k-unsplash.jpg?1683346502"
               alt="blurred figures standing in the dark"
+              class="transform-img"
             />
           </div>
         </div>
