@@ -111,6 +111,9 @@
       .hewn-city p {
         color: grey;
       }
+      .active {
+        display: none;
+      }
       .wrapper img {
         display: block;
         max-width: 100%;
@@ -500,9 +503,6 @@
             />
           </div>
         </div>
-        <button class="btn btn-dark mb-4">
-          Click here to see a darker side of the night court
-        </button>
       </div>
     </div>
     <footer class="mb-4">
@@ -568,8 +568,11 @@
         </div>
       </div>
     </footer>
+    <button id="toggle" class="btn btn-dark mb-4">
+      Click here to see a darker side of the night court
+    </button>
 
-    <div class="container hewn-city">
+    <div id="darkTheme" class="container hewn-city active">
       <div>
         <h2>The Hewn city</h2>
         <p>
@@ -634,4 +637,11 @@
       </div>
     </div>
   </body>
+  <script>
+    const darkTheme = document.querySelector("#darkTheme");
+    const toggle = document.querySelector("#toggle");
+    toggle.addEventListener("click", () => {
+      darkTheme.classList.toggle("active");
+    });
+  </script>
 </html>
