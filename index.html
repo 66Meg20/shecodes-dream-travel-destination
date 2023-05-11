@@ -168,8 +168,26 @@
         color: grey;
       }
       .hewn-city p {
-        text-align: left;
+        text-align: center;
         color: grey;
+      }
+      .hewn-city img {
+        max-width: 400px;
+      }
+      .hewn-city-header {
+        text-align: center;
+        margin: 0 auto;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/347/original/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg?1683179017);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 0;
+        color: white;
+      }
+      .embed {
+        width: 100%;
+        aspect-ratio: 20 / 9;
+        border-radius: 16px;
       }
       .active {
         display: none;
@@ -214,6 +232,12 @@
       .lil-nav img:hover {
         transform: scale(1.05);
         filter: saturate(1);
+      }
+      .dark {
+        background: black;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
       }
     </style>
     <title>Velaris</title>
@@ -582,78 +606,99 @@
         </div>
       </div>
     </footer>
-    <button id="toggle" class="btn btn-dark mb-4">
-      Click here to see a darker side of the night court
-    </button>
 
-    <div id="darkTheme" class="container hewn-city active">
+    <div id="darkTheme" class="container hewn-city active mb-4">
       <div>
-        <h2>The Hewn city</h2>
+        <h2 class="hewn-city-header mb-4">Hewn City The Court of Nightmares</h2>
         <p>
           The Hewn City, also known as the Court of Nightmares, is one of the
           two main cities of the Night Court of Prythian. It's located under the
           mountains of the Night Court and is the domain of High Lord Rhysand.
         </p>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/659/original/camila-quintero-franco-mC852jACK1g-unsplash.jpg?1683346987"
-          alt="woman screaming"
-          class="transform-img"
-        />
-        <p>
-          Unlike Under the Mountain, which was a series of halls and rooms and
-          levels, the Hewn City is a true city within the mountain. There are
-          avenues, separate buildings with spires, homes, and bridges. It is an
-          entire metropolis carved from the dark stone of the mountain itself.
-          Every surface is carved with lovely, hideous artwork: figures dance
-          and fornicate, beg and revel, pillars are carved to look like curling
-          vines of night-blooming flowers. Water runs throughout the city in
-          little streams and rivers tapped from the heart of the mountain
-          itself. The mountain-city is lit with silvery bobbing faelights. The
-          Hewn City is ruled from a castle inside the mountain, which is the
-          official seat of the High Lord of the Night Court. The gates to the
-          castle are carved into great, scaled black beasts coiled together in a
-          nest of claws and fangs, sleeping and fighting or devouring each
-          other. Between them flow vines of jasmine and moonflowers. The throne
-          room within is of polished ebony on every surface, the floor highly
-          polished enough Feyre could see her face in it when she kneeled and
-          lowered her head. More of the beasts from the gates are carved around
-          the countless columns supporting the onyx ceiling, which is so high
-          the gloom hides its finer details. Atop a dais is a throne that has
-          been fashioned out of a few of the beasts, a head snaking around
-          either side of the back as if they watch over the High Lord's
-          shoulders. The castle's council chambers was nearly as large as its
-          throne room. It was carved from the same dark rock, pillars fashioned
-          after those entangled beasts, having a high domed ceiling. It had a
-          mammoth table of black glass that split the room in two, shaped a bit
-          like a lightning bolt. The table's corners were left long and jagged
-          so they were as sharp as a razor, capable of injury if one was not
-          careful.
-        </p>
+        <hr />
+        <hr />
+
+        <div class="row mb-4">
+          <div class="col-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/659/original/camila-quintero-franco-mC852jACK1g-unsplash.jpg?1683346987"
+              alt="woman screaming"
+              class="transform-img"
+            />
+          </div>
+          <div class="col-6">
+            <p>
+              Unlike Under the Mountain, which was a series of halls and rooms
+              and levels, the Hewn City is a true city within the mountain.
+              There are avenues, separate buildings with spires, homes, and
+              bridges. It is an entire metropolis carved from the dark stone of
+              the mountain itself. Every surface is carved with lovely, hideous
+              artwork: figures dance and fornicate, beg and revel, pillars are
+              carved to look like curling vines of night-blooming flowers. Water
+              runs throughout the city in little streams and rivers tapped from
+              the heart of the mountain itself. The mountain-city is lit with
+              silvery bobbing faelights. The Hewn City is ruled from a castle
+              inside the mountain, which is the official seat of the High Lord
+              of the Night Court. The gates to the castle are carved into great,
+              scaled black beasts coiled together in a nest of claws and fangs,
+              sleeping and fighting or devouring each other. Between them flow
+              vines of jasmine and moonflowers. The throne room within is of
+              polished ebony on every surface, the floor highly polished enough
+              Feyre could see her face in it when she kneeled and lowered her
+              head. More of the beasts from the gates are carved around the
+              countless columns supporting the onyx ceiling, which is so high
+              the gloom hides its finer details. Atop a dais is a throne that
+              has been fashioned out of a few of the beasts, a head snaking
+              around either side of the back as if they watch over the High
+              Lord's shoulders. The castle's council chambers was nearly as
+              large as its throne room. It was carved from the same dark rock,
+              pillars fashioned after those entangled beasts, having a high
+              domed ceiling. It had a mammoth table of black glass that split
+              the room in two, shaped a bit like a lightning bolt. The table's
+              corners were left long and jagged so they were as sharp as a
+              razor, capable of injury if one was not careful.
+            </p>
+          </div>
+        </div>
+        <iframe
+          class="embed"
+          src="https://www.youtube.com/embed/OqjBWUJs2mQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <hr />
+        <hr />
+
         <div class="row">
           <div class="col-4">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/656/original/pelly-benassi-Hz1WQbHcXag-unsplash.jpg?1683346480"
               alt="birds flying in dark background"
-              class="transform-img"
+              class="transform-img mb-4"
             />
           </div>
           <div class="col-4">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/657/original/alexandre-lallemand-gZpM8PjMdBo-unsplash.jpg?1683346492"
               alt="sillohuette standing at end of alley"
-              class="transform-img"
+              class="transform-img mb-4"
             />
           </div>
           <div class="col-4">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/658/original/olesya-yemets-LyW7pqsP81k-unsplash.jpg?1683346502"
               alt="blurred figures standing in the dark"
-              class="transform-img"
+              class="transform-img mb-4"
             />
           </div>
         </div>
       </div>
     </div>
+    <button id="toggle" class="btn btn-dark mb-4">
+      Click here to see a darker side of the night court
+    </button>
   </body>
   <script>
     const darkTheme = document.querySelector("#darkTheme");
@@ -661,5 +706,13 @@
     toggle.addEventListener("click", () => {
       darkTheme.classList.toggle("active");
     });
+
+    function changeTheme() {
+      let body = document.querySelector("body");
+      body.classList.toggle("dark");
+    }
+
+    let button = document.querySelector("#toggle");
+    button.addEventListener("click", changeTheme);
   </script>
 </html>
