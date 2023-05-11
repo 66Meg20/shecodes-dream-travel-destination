@@ -19,10 +19,13 @@
       body {
         text-align: center;
       }
+      h1 {
+        margin-top: 40px;
+      }
       .transform-img {
         display: block;
         margin: 0 auto;
-        transition: ease-in-out 15ms;
+        transition: all ease-in-out 150ms;
       }
       .transform-img:hover {
         transform: scale(1.2);
@@ -34,7 +37,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 60px 0;
+        padding: 75px 0;
         padding-top: 10px;
         color: white;
       }
@@ -106,16 +109,20 @@
         padding: 60px 60px;
         color: white;
       }
+      .header-nav {
+        background: black;
+        padding: 20px;
+      }
       nav ul {
         margin: 0;
         padding: 0;
-        padding-bottom: 20px;
       }
       nav li {
+        font-size: 20px;
         display: inline;
         list-style: none;
-        margin-left: 10px;
-        margin-right: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
       }
       nav a {
         text-decoration: none;
@@ -173,6 +180,9 @@
       }
       .hewn-city img {
         max-width: 400px;
+      }
+      .hewn-city img:hover {
+        filter: contrast(75%);
       }
       .hewn-city-header {
         text-align: center;
@@ -243,26 +253,27 @@
     <title>Velaris</title>
   </head>
   <body>
+    <nav class="header-nav d-flex justify-content-center">
+      <ul>
+        <li><a href="#Rainbow"> Rainbow of Velaris</a></li>
+        <li><a href="#Residents">Notable residents</a></li>
+        <li>
+          <a href="https://sarahjmaas.com/" target="_blank">Created by</a>
+        </li>
+        <li>
+          <a
+            href="https://acourtofthornsandroses.fandom.com/wiki/Hewn_City"
+            target="_blank"
+            >Hewn City</a
+          >
+        </li>
+      </ul>
+    </nav>
     <div class="container">
-      <div class="header mb-4 mt-3">
-        <nav class="d-flex justify-content-end">
-          <ul>
-            <li><a href="#Rainbow"> Rainbow of Velaris</a></li>
-            <li><a href="#Residents">Notable residents</a></li>
-            <li>
-              <a href="https://sarahjmaas.com/" target="_blank">Created by</a>
-            </li>
-            <li>
-              <a
-                href="https://acourtofthornsandroses.fandom.com/wiki/Hewn_City"
-                target="_blank"
-                >Hewn City</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <div class="header mb-4 mt-4">
         <h1>Velaris City of starlight</h1>
       </div>
+
       <div class="row header-img">
         <div class="hero mb-4">
           <h3>From Sarah J Mass' series "A COURT OF THORNS AND ROSES"</h3>
